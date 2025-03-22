@@ -284,7 +284,7 @@ export default function About() {
                                         <p className="text-sm text-gray-600 dark:text-gray-400">ServiceNow Developer @ Now Compiler</p>
                                     </div>
                                 </div>
-                                <p className="text-gray-600 dark:text-gray-300 italic">"PulseBit.tech transformed our online presence with a sleek, responsive website. Their attention to detail and smooth execution exceeded our expectations!"</p>
+                                <p className="text-gray-600 dark:text-gray-300 italic">&ldquo;PulseBit.tech transformed our online presence with a sleek, responsive website. Their attention to detail and smooth execution exceeded our expectations!&rdquo;</p>
                             </div>
 
                             {/* Testimonial 2 */}
@@ -300,7 +300,7 @@ export default function About() {
                                         <p className="text-sm text-gray-600 dark:text-gray-400">Student</p>
                                     </div>
                                 </div>
-                                <p className="text-gray-600 dark:text-gray-300 italic">"Their mobile app development team delivered a flawless product that boosted our user engagement by 70%! Highly recommend their services."</p>
+                                <p className="text-gray-600 dark:text-gray-300 italic">&ldquo;Their mobile app development team delivered a flawless product that boosted our user engagement by 70%! Highly recommend their services.&rdquo;</p>
                             </div>
 
                             {/* Testimonial 3 */}
@@ -316,7 +316,7 @@ export default function About() {
                                         <p className="text-sm text-gray-600 dark:text-gray-400">Sales Officer, ITC</p>
                                     </div>
                                 </div>
-                                <p className="text-gray-600 dark:text-gray-300 italic">"Working with PulseBit.tech was a game-changer. They built our e-commerce platform with stunning UI/UX, and our sales skyrocketed!"</p>
+                                <p className="text-gray-600 dark:text-gray-300 italic">&ldquo;Working with PulseBit.tech was a game-changer. They built our e-commerce platform with stunning UI/UX, and our sales skyrocketed!&rdquo;</p>
                             </div>
                             <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all">
                                 <div className="flex items-center space-x-4 mb-4">
