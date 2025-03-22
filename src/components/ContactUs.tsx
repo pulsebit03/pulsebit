@@ -28,7 +28,7 @@ export default function ContactUs() {
           Get in Touch
         </h2>
         <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto fade-trigger delay-100">
-          Have a project in mind? We'd love to hear from you. Send us a message and we'll respond as soon as possible.
+          Have a project in mind? We&apos;d love to hear from you. Send us a message and we&apos;ll respond as soon as possible.
         </p>
       </div>
 

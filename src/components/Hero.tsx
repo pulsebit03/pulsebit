@@ -12,7 +12,7 @@ export default function Hero() {
         </p>
         <div className="pt-4 fade-trigger delay-200">
           <button className="bg-blue-600 text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-blue-700 transition-colors">
-            Let's Get Started
+            Let&apos;s Get Started
           </button>
         </div>
       </div>
