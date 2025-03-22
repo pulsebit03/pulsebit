@@ -25,7 +25,7 @@ export default function Contact() {
 
       if (response.ok) {
         alert('Message sent successfully!');
-        e.currentTarget.reset();
+        (e.target as HTMLFormElement).reset();
       } else {
         throw new Error('Failed to send message');
       }
