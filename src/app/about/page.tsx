@@ -330,7 +330,7 @@ export default function About() {
                                         <p className="text-sm text-gray-600 dark:text-gray-400">Branch Manager, Utkarsh Small Finance Bank</p>
                                     </div>
                                 </div>
-                                <p className="text-gray-600 dark:text-gray-300 italic">"The team’s professionalism and innovative approach made our app stand out. They delivered on time with excellent post-launch support!"</p>
+                                <p className="text-gray-600 dark:text-gray-300 italic">&quot;The team&apos;s professionalism and innovative approach made our app stand out. They delivered on time with excellent post-launch support!&quot;</p>
                             </div>
                         </div>
 
