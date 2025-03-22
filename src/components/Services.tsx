@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import { Globe, Smartphone, Palette } from 'lucide-react';
 
 const services = [
