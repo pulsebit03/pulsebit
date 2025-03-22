@@ -29,6 +29,7 @@ export default function Newsletter() {
         setMessage(data.error);
       }
     } catch (error) {
+      console.error('Newsletter subscription error:', error);
       setStatus('error');
       setMessage('Failed to subscribe. Please try again later.');
     }
