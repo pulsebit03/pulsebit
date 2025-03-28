@@ -2,11 +2,11 @@ import Image from 'next/image';
 
 const projects = [
   {
-    title: 'E-commerce Platform',
-    description: 'A modern e-commerce solution with seamless user experience, full dynamic support, and a powerful admin panel for effortless management.',
-    image: '/projects/e-commerce.png',
-    category: 'Web Development',
-    url:''
+    title: 'NextHire',
+    description: 'NextHire is an AI-powered platform that helps users practice and improve their job interview skills through simulated sessions.',
+    image: '/projects/nextHire.png',
+    category: 'Web Development(SaaS)',
+    url:'https://nexthire.pulsebit.tech/'
   },
   {
     title: 'Logo Design',
@@ -20,7 +20,7 @@ const projects = [
     description: 'Professional portfolio website with modern design.',
     image: '/projects/project-1.png',
     category: 'Web Design',
-    url:'https://www.anandsharma.info/'
+    url:'https://vectorvista.anandsharma.info/'
   },
   {
     title: 'SAAS Solution',
@@ -29,12 +29,13 @@ const projects = [
     category: 'Mobile App & Website',
     url:''
   },
-  // {
-  //   title: 'Wellness Platform',
-  //   description: 'Comprehensive wellness and meditation platform.',
-  //   image: '/projects/wellness.svg',
-  //   category: 'Web Development'
-  // },
+  {
+    title: 'Wellness Platform',
+    description: 'Comprehensive wellness and meditation platform.',
+    image: '/projects/e-commerce.png',
+    category: 'Web Development',
+    url:'https://akxbrand02.vercel.app/'
+  },
   // {
   //   title: 'Social Media App',
   //   description: 'Feature-rich social networking application.',

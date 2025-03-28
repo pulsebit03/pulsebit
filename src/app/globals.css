@@ -65,7 +65,7 @@
 }
 
 .float-animation {
-  animation: floatY 4s ease-in-out infinite;
+  animation: floatY 3s ease-in-out infinite;
 }
 
 .animate-on-scroll {
