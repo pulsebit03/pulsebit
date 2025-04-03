@@ -13,7 +13,7 @@ const projects = [
     description: 'Custom logo design for your business with attention to detail.',
     image: '/projects/project-3.jpeg',
     category: 'Graphic Design',
-    url:''
+    url:'https://vectorvista.anandsharma.info/'
   },
   {
     title: 'Portfolio Website',
@@ -22,19 +22,19 @@ const projects = [
     category: 'Web Design',
     url:'https://vectorvista.anandsharma.info/'
   },
-  {
-    title: 'SAAS Solution',
-    description: 'Full Stack SAAS solution for businesses.',
-    image: '/projects/project-2.png',
-    category: 'Mobile App & Website',
-    url:''
-  },
+  
   {
     title: 'Wellness Platform',
     description: 'Comprehensive wellness and meditation platform.',
     image: '/projects/e-commerce.png',
     category: 'Web Development',
     url:'https://akxbrand02.vercel.app/'
+  },{
+    title: 'SAAS Solution',
+    description: 'Full Stack SAAS solution for businesses.',
+    image: '/projects/project-2.png',
+    category: 'Mobile App & Website',
+    url:''
   },
   // {
   //   title: 'Social Media App',

@@ -107,23 +107,33 @@ export default function About() {
                                         { type: 'linkedin', url: 'https://www.linkedin.com/in/nitesh-singh-pulsebit' }
                                     ]
                                 },
+                                // {
+                                //     name: 'Asheesh Yadav',
+                                //     role: ' Co-Founder',
+                                //     image: '/projects/co-founder.jpeg',
+                                //     socials: [
+                                //         { type: 'instagram', url: 'https://www.instagram.com/mr._asheesh' },
+                                //         { type: 'linkedin', url: 'https://www.linkedin.com/in/asheesh-yadav-pulsebit' }
+                                //     ]
+                                // },
                                 {
-                                    name: 'Asheesh Yadav',
-                                    role: 'Product Manager & Co-Founder',
-                                    image: '/projects/co-founder.jpeg',
+                                    name: 'Anand Kumar Sharma',
+                                    role: 'Product Manager & CEO',
+                                    image: '/projects/ceo.jpeg',
                                     socials: [
-                                        { type: 'instagram', url: 'https://www.instagram.com/mr._asheesh' },
-                                        { type: 'linkedin', url: 'https://www.linkedin.com/in/asheesh-yadav-pulsebit' }
+                                        // { type: 'instagram', url: 'https://instagram.com/pulsebit.tech' },
+                                        { type: 'linkedin', url: 'https://www.linkedin.com/in/anands2959' },
+                                        { type: 'github', url: 'https://github.com/anands2959' }
                                     ]
                                 },
                                 {
-                                    name: 'Anand Kumar Sharma',
-                                    role: 'Head of Development & CEO',
-                                    image: '/projects/ceo.jpeg',
+                                    name: 'Pratham Singh',
+                                    role: 'Head of Development',
+                                    image: '/projects/hod.jpg',
                                     socials: [
-                                        { type: 'instagram', url: 'https://instagram.com/pulsebit.tech' },
-                                        { type: 'linkedin', url: 'https://www.linkedin.com/in/anands2959' },
-                                        { type: 'github', url: 'https://github.com/anands2959' }
+                                        { type: 'instagram', url: 'https://www.instagram.com/_ig_singhh' },
+                                        { type: 'linkedin', url: 'https://www.linkedin.com/in/pratham-singh-777768249' },
+                                        { type: 'github', url: 'https://github.com/pratham-singh-14' }
                                     ]
                                 }
                             ].map((leader, index) => (
