@@ -4,6 +4,7 @@ import Footer from '@/components/Footer';
 import Image from 'next/image';
 import { useEffect } from 'react';
 import { initAnimations } from '../initAnimations';
+import { Globe, Smartphone, Palette } from 'lucide-react';
 
 export default function About() {
     useEffect(() => {
@@ -11,12 +12,14 @@ export default function About() {
     }, []);
     return (
         <>
-            <div className="min-h-screen py-16 px-4 md:px-8 lg:px-16">
-                <div className="max-w-7xl mx-auto space-y-16">
+            <div className="min-h-screen py-16 px-4 md:px-8 lg:px-16 bg-gradient-to-br from-gray-900 via-gray-800 to-indigo-900 relative overflow-hidden">
+                <div className="absolute inset-0 bg-grid-pattern opacity-5 animate-gradient"></div>
+                <div className="max-w-7xl mx-auto space-y-16 relative z-10">
                     {/* Hero Section */}
                     <section className="text-center space-y-6 fade-trigger">
-                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold">We Transform Ideas Into Digital Reality</h1>
-                        <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+                        <span className="inline-block px-4 py-1 mb-4 rounded-full bg-blue-500/10 text-blue-400 text-sm font-medium hover:bg-blue-500/20 transition-colors duration-300">About Us</span>
+                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 animate-gradient hover:scale-105 transition-transform duration-300">We Transform Ideas Into Digital Reality</h1>
+                        <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">
                             Building innovative solutions since 2024
                         </p>
                     </section>
@@ -28,25 +31,28 @@ export default function About() {
                             { number: '3+', label: 'Team Members' },
                             { number: '98%', label: 'Client Satisfaction' }
                         ].map((metric, index) => (
-                            <div key={index} className="p-6">
-                                <h2 className="text-4xl font-bold text-primary mb-2">{metric.number}</h2>
-                                <p className="text-gray-600 dark:text-gray-300">{metric.label}</p>
+                            <div key={index} className="p-6 backdrop-blur-sm bg-gray-800/30 rounded-xl border border-gray-700/50 hover:border-blue-500/50 hover:bg-gray-700/50 transition-all duration-300 hover:scale-105">
+                                <h2 className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500 mb-2">{metric.number}</h2>
+                                <p className="text-gray-300">{metric.label}</p>
                             </div>
                         ))}
                     </section>
 
                     {/* Our Story */}
                     <section className="space-y-8 fade-trigger delay-200">
-                        <h2 className="text-3xl font-bold text-center mb-12">Our Story</h2>
+                        <div className="text-center mb-12">
+                            <span className="inline-block px-4 py-1 mb-4 rounded-full bg-blue-500/10 text-blue-400 text-sm font-medium hover:bg-blue-500/20 transition-colors duration-300">Our Journey</span>
+                            <h2 className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500">Our Story</h2>
+                        </div>
                         <div className="grid md:grid-cols-2 gap-12 items-center">
-                            <div className="relative h-[300px] md:h-[400px] rounded-lg shadow-lg">
+                            <div className="relative rotate-4 h-[300px] md:h-[400px] rounded-xl overflow-hidden group hover:scale-105 transition-transform duration-300">
+                                <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-purple-500/20 group-hover:opacity-75 transition-opacity duration-300"></div>
                                 <Image
                                     src="/projects/brand-logo.gif"
                                     alt="Our Story"
                                     width={1500}
                                     height={1500}
-                                    // fill
-                                    className="object-contain rounded-lg shadow-lg rotate-3"
+                                    className="object-contain rounded-xl shadow-2xl group-hover:rotate-3 transition-transform duration-300"
                                 />
                             </div>
                             <div className="space-y-6">
@@ -59,43 +65,52 @@ export default function About() {
                                     ].map((milestone, index) => (
                                         <div key={index} className="flex gap-4">
                                             <div className="text-primary font-bold">{milestone.year}</div>
-                                            <div className="text-gray-600 dark:text-gray-300">{milestone.text}</div>
+                                            <div className="text-gray-600 text-gray-300">{milestone.text}</div>
                                         </div>
                                     ))} */}
-                                    <p className='text-lg leading-relaxed text-gray-600 dark:text-gray-300 tracking-wide max-w-4xl mx-auto px-6 py-4 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300'>
+                                    <p className='text-lg leading-relaxed text-gray-300 tracking-wide max-w-4xl mx-auto px-6 py-4 rounded-lg bg-gray-800/30 backdrop-blur-sm border border-gray-700/50 hover:border-blue-500/50 hover:bg-gray-700/50 transition-all duration-300 hover:scale-105 mb-4'>
                                         PulseBit.tech creates intuitive websites and mobile applications to help businesses thrive in the digital world. Our services include modern, responsive website design, cross-platform mobile app development, and captivating graphics design.</p>
-                                    <p className='text-lg leading-relaxed text-gray-600 dark:text-gray-300 tracking-wide max-w-4xl mx-auto px-6 py-4 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300'>
+                                    <p className='text-lg leading-relaxed text-gray-300 tracking-wide max-w-4xl mx-auto px-6 py-4 rounded-lg bg-gray-800/30 backdrop-blur-sm border border-gray-700/50 hover:border-blue-500/50 hover:bg-gray-700/50 transition-all duration-300 hover:scale-105'>
                                         We follow a structured process from discovery and planning to design, development, testing, and launch, ensuring high-quality results. Explore our projects in e-commerce, health and fitness, and social media to see how we turn ideas into impactful digital solutions.</p>                                    </div>
                             </div>
                         </div>
                     </section>
 
                     {/* Mission, Vision, Values */}
-                    <section className="grid md:grid-cols-3 gap-8 fade-trigger delay-300">
-                        {[
-                            {
-                                title: 'Mission',
-                                description: 'To provide innovative solutions that empower businesses to thrive in the digital era.'
-                            },
-                            {
-                                title: 'Vision',
-                                description: 'To be the leading innovator in creating seamless, future-ready digital experiences.'
-                            },
-                            {
-                                title: 'Values',
-                                description: 'Integrity, creativity, collaboration, and commitment to excellence in everything we do.'
-                            }
-                        ].map((item, index) => (
-                            <div key={index} className="p-6 rounded-lg bg-gray-50 dark:bg-gray-800 hover:shadow-lg transition-shadow">
-                                <h3 className="text-xl font-semibold mb-4">{item.title}</h3>
-                                <p className="text-gray-600 dark:text-gray-300">{item.description}</p>
+                    <section className="space-y-8 fade-trigger delay-300">
+                        <div className="text-center mb-12">
+                            <span className="inline-block px-4 py-1 mb-4 rounded-full bg-blue-500/10 text-blue-400 text-sm font-medium hover:bg-blue-500/20 transition-colors duration-300">Our Principles</span>
+                            <h2 className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500">Mission, Vision & Values</h2>
+                        </div>
+                        <div className="grid md:grid-cols-3 gap-8">
+                            {[
+                                {
+                                    title: 'Mission',
+                                    description: 'To provide innovative solutions that empower businesses to thrive in the digital era.'
+                                },
+                                {
+                                    title: 'Vision',
+                                    description: 'To be the leading innovator in creating seamless, future-ready digital experiences.'
+                                },
+                                {
+                                    title: 'Values',
+                                    description: 'Integrity, creativity, collaboration, and commitment to excellence in everything we do.'
+                                }
+                            ].map((item, index) => (
+                                <div key={index} className="p-8 rounded-xl backdrop-blur-sm bg-gray-800/30 border border-gray-700/50 hover:border-blue-500/50 hover:bg-gray-700/50 transition-all duration-300 hover:scale-105 group">
+                                    <h3 className="text-xl font-semibold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500 group-hover:scale-105 transition-transform">{item.title}</h3>
+                                    <p className="text-gray-300">{item.description}</p>
+                                </div>
+                            ))}
                             </div>
-                        ))}
                     </section>
 
                     {/* Meet Our Leadership */}
                     <section className="space-y-8 fade-trigger delay-400">
-                        <h2 className="text-3xl font-bold text-center">Meet Our Leadership</h2>
+                        <div className="text-center mb-12">
+                            <span className="inline-block px-4 py-1 mb-4 rounded-full bg-blue-500/10 text-blue-400 text-sm font-medium hover:bg-blue-500/20 transition-colors duration-300">Our Team</span>
+                            <h2 className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500">Meet Our Leadership</h2>
+                        </div>
                         <div className="grid md:grid-cols-3 gap-8">
                             {[
                                 {
@@ -137,8 +152,8 @@ export default function About() {
                                     ]
                                 }
                             ].map((leader, index) => (
-                                <div key={index} className="text-center space-y-4">
-                                    <div className="relative w-48 h-48 mx-auto rounded-full overflow-hidden">
+                                <div key={index} className="text-center space-y-4 p-6 rounded-xl backdrop-blur-sm bg-gray-800/30 border border-gray-700/50 hover:border-blue-500/50 hover:bg-gray-700/50 transition-all duration-300 hover:scale-105 group">
+                                    <div className="relative w-48 h-48 mx-auto rounded-full overflow-hidden group-hover:scale-105 transition-transform duration-300">
                                         <Image
                                             src={leader.image}
                                             alt={leader.name}
@@ -146,8 +161,8 @@ export default function About() {
                                             className="object-cover"
                                         />
                                     </div>
-                                    <h3 className="text-xl font-semibold">{leader.name}</h3>
-                                    <p className="text-gray-600 dark:text-gray-300">{leader.role}</p>
+                                    <h3 className="text-xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">{leader.name}</h3>
+                                    <p className="text-gray-300">{leader.role}</p>
                                     <div className="flex justify-center space-x-4">
                                         {leader.socials.map((social, socialIndex) => {
                                             if (social.type === 'instagram') {
@@ -209,7 +224,7 @@ export default function About() {
                     {/* Core Values */}
                     <section className="space-y-8 fade-trigger delay-500">
                         <h2 className="text-3xl font-bold text-center">Our Core Values</h2>
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 text-gray-300 gap-8">
                             {[
                                 {
                                     icon: (
@@ -266,12 +281,12 @@ export default function About() {
                                     description: 'We value our teams wellbeing'
                                 }
                             ].map((value, index) => (
-                                <div key={index} className="p-6 bg-white dark:bg-gray-800 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                                <div key={index} className="p-6 backdrop-blur-sm bg-gray-800/30 rounded-lg border border-gray-700/50 hover:border-blue-500/50 hover:bg-gray-700/50 transition-all duration-300 hover:scale-105">
                                     <div className="flex items-center space-x-4 mb-4">
                                         {value.icon}
                                         <h3 className="text-xl font-semibold">{value.title}</h3>
                                     </div>
-                                    <p className="text-gray-600 dark:text-gray-300">{value.description}</p>
+                                    <p className="text-gray-300">{value.description}</p>
                                 </div>
                             ))}
                         </div>
@@ -282,65 +297,65 @@ export default function About() {
                         <h2 className="text-3xl font-bold text-center">Client Testimonials</h2>
                         <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8 items-center">
                             {/* Testimonial 1 */}
-                            <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all">
+                            <div className="bg-gray-800/30 backdrop-blur-sm p-6 rounded-lg border border-gray-700/50 hover:border-blue-500/50 hover:bg-gray-700/50 transition-all duration-300 hover:scale-105">
                                 <div className="flex items-center space-x-4 mb-4">
-                                    <div className="w-12 h-12 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center">
+                                    <div className="w-12 h-12 rounded-full bg-gray-200 bg-gray-700 flex items-center justify-center">
                                         <svg className="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                                         </svg>
                                     </div>
                                     <div>
-                                        <h3 className="font-semibold text-gray-900 dark:text-white">Shubham Awasthi</h3>
-                                        <p className="text-sm text-gray-600 dark:text-gray-400">ServiceNow Developer @ Now Compiler</p>
+                                        <h3 className="font-semibold text-gray-900 text-white">Shubham Awasthi</h3>
+                                        <p className="text-sm text-gray-300">ServiceNow Developer @ Now Compiler</p>
                                     </div>
                                 </div>
-                                <p className="text-gray-600 dark:text-gray-300 italic">&ldquo;PulseBit.tech transformed our online presence with a sleek, responsive website. Their attention to detail and smooth execution exceeded our expectations!&rdquo;</p>
+                                <p className="text-gray-300 italic">&ldquo;PulseBit.tech transformed our online presence with a sleek, responsive website. Their attention to detail and smooth execution exceeded our expectations!&rdquo;</p>
                             </div>
 
                             {/* Testimonial 2 */}
-                            <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all">
+                            <div className="bg-gray-800/30 backdrop-blur-sm p-6 rounded-lg border border-gray-700/50 hover:border-blue-500/50 hover:bg-gray-700/50 transition-all duration-300 hover:scale-105">
                                 <div className="flex items-center space-x-4 mb-4">
-                                    <div className="w-12 h-12 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center">
+                                    <div className="w-12 h-12 rounded-full bg-gray-200 bg-gray-700 flex items-center justify-center">
                                         <svg className="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                                         </svg>
                                     </div>
                                     <div>
-                                        <h3 className="font-semibold text-gray-900 dark:text-white">Ayush Awasthi</h3>
-                                        <p className="text-sm text-gray-600 dark:text-gray-400">Student</p>
+                                        <h3 className="font-semibold text-gray-900 text-white">Himanshi Jatariya</h3>
+                                        <p className="text-sm text-gray-300">Founder @ AKX Brand</p>
                                     </div>
                                 </div>
-                                <p className="text-gray-600 dark:text-gray-300 italic">&ldquo;Their mobile app development team delivered a flawless product that boosted our user engagement by 70%! Highly recommend their services.&rdquo;</p>
+                                <p className="text-gray-300 italic">&ldquo;Anand has very good skills in developing website and mobile app. His Work was very good. He was available everytime when i had some querries. He also gave inputs from his side for the solutions. I am fully Satisfied with the website and his work.&rdquo;</p>
                             </div>
 
                             {/* Testimonial 3 */}
-                            <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all">
+                            <div className="bg-gray-800/30 backdrop-blur-sm p-6 rounded-lg border border-gray-700/50 hover:border-blue-500/50 hover:bg-gray-700/50 transition-all duration-300 hover:scale-105">
                                 <div className="flex items-center space-x-4 mb-4">
-                                    <div className="w-12 h-12 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center">
+                                    <div className="w-12 h-12 rounded-full bg-gray-200 bg-gray-700 flex items-center justify-center">
                                         <svg className="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                                         </svg>
                                     </div>
                                     <div>
-                                        <h3 className="font-semibold text-gray-900 dark:text-white">Arpit Ranjan Malviya</h3>
-                                        <p className="text-sm text-gray-600 dark:text-gray-400">Sales Officer, ITC</p>
+                                        <h3 className="font-semibold text-gray-900 text-white">Arpit Ranjan Malviya</h3>
+                                        <p className="text-sm text-gray-300">Sales Officer @ ITC</p>
                                     </div>
                                 </div>
-                                <p className="text-gray-600 dark:text-gray-300 italic">&ldquo;Working with PulseBit.tech was a game-changer. They built our e-commerce platform with stunning UI/UX, and our sales skyrocketed!&rdquo;</p>
+                                <p className="text-gray-300 italic">&ldquo;Working with PulseBit.tech was a game-changer. They built our e-commerce platform with stunning UI/UX, and our sales skyrocketed!&rdquo;</p>
                             </div>
-                            <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all">
+                            <div className="bg-gray-800/30 backdrop-blur-sm p-6 rounded-lg border border-gray-700/50 hover:border-blue-500/50 hover:bg-gray-700/50 transition-all duration-300 hover:scale-105">
                                 <div className="flex items-center space-x-4 mb-4">
-                                    <div className="w-12 h-12 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center">
+                                    <div className="w-12 h-12 rounded-full bg-gray-200 bg-gray-700 flex items-center justify-center">
                                         <svg className="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                                         </svg>
                                     </div>
                                     <div>
-                                        <h3 className="font-semibold text-gray-900 dark:text-white">Anoop Sharma</h3>
-                                        <p className="text-sm text-gray-600 dark:text-gray-400">Branch Manager, Utkarsh Small Finance Bank</p>
+                                        <h3 className="font-semibold text-gray-900 text-white">Anoop Sharma</h3>
+                                        <p className="text-sm text-gray-300">Branch Manager @ Utkarsh Small Finance Bank</p>
                                     </div>
                                 </div>
-                                <p className="text-gray-600 dark:text-gray-300 italic">&quot;The team&apos;s professionalism and innovative approach made our app stand out. They delivered on time with excellent post-launch support!&quot;</p>
+                                <p className="text-gray-300 italic">&quot;The team&apos;s professionalism and innovative approach made our app stand out. They delivered on time with excellent post-launch support!&quot;</p>
                             </div>
                         </div>
 
