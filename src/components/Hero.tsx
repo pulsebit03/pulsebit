@@ -43,8 +43,8 @@ export default function Hero() {
           >
             Start Your Journey
           </button>
-          <button 
-            onClick={() => router.push('/portfolio')} 
+          <button
+            onClick={() => router.push('/portfolio')}
             className="px-10 py-4 rounded-full text-lg font-semibold border-2 border-purple-500 text-white hover:bg-purple-500/20 transform hover:scale-105 transition-all duration-300 hover:shadow-[0_0_20px_rgba(168,85,247,0.3)]"
           >
             Explore Our Work
