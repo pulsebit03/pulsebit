@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   viewport: 'width=device-width, initial-scale=1',
   robots: 'index, follow, max-image-preview:large',
   alternates: {
-    canonical: 'https://pulsebit.com'
+    canonical: 'https://pulsebit.tech'
   },
   verification: {
     google: 'FJRmTKvjKPyaZ6ofgrP8v5W7bMiuPgeSDqrBTvSt--8',
@@ -17,13 +17,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'PulseBit | Professional Web & Mobile App Development Solutions',
     description: 'Transform your business with our expert mobile and web development services. Specializing in iOS & Android apps, custom digital solutions, modern web applications, and innovative technology consulting.',
-    url: 'https://pulsebit.com',
+    url: 'https://pulsebit.tech',
     siteName: 'PulseBit Technologies',
     locale: 'en_US',
     type: 'website',
     images: [
       {
-        url: 'https://pulsebit.com/projects/hero-image.jpeg',
+        url: 'https://pulsebit.tech/projects/brand-logo.png',
         width: 1200,
         height: 630,
         alt: 'PulseBit Technologies - Web Development and Digital Solutions'
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     title: 'PulseBit | Mobile & Web Development Solutions',
     description: 'Transform your business with our expert iOS/Android mobile app development, web development services and innovative digital solutions.',
     creator: '@PulseBit',
-    images: ['https://pulsebit.com/projects/hero-image.jpeg']
+    images: ['https://pulsebit.tech/projects/brand-logo.png']
   },
   other: {
     'theme-color': '#000000',

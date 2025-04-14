@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: process.env.SITE_URL || 'https://pulsebit.com',
+  siteUrl: process.env.SITE_URL || 'https://pulsebit.tech',
   generateRobotsTxt: true,
   generateIndexSitemap: true,
   changefreq: 'weekly',

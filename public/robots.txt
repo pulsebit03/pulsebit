@@ -3,5 +3,8 @@ User-agent: *
 Allow: /
 Disallow: /api/*
 
+# Host
+Host: https://pulsebit.tech
+
 # Sitemaps
-Sitemap: https://pulsebit.com/sitemap.xml
+Sitemap: https://pulsebit.tech/sitemap.xml
