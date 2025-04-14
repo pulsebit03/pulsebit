@@ -4,7 +4,6 @@ import Footer from '@/components/Footer';
 import Image from 'next/image';
 import { useEffect } from 'react';
 import { initAnimations } from '../initAnimations';
-import { Globe, Smartphone, Palette } from 'lucide-react';
 
 export default function About() {
     useEffect(() => {

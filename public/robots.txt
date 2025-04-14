@@ -1,0 +1,10 @@
+# *
+User-agent: *
+Allow: /
+Disallow: /api/*
+
+# Host
+Host: https://pulsebit.com
+
+# Sitemaps
+Sitemap: https://pulsebit.com/sitemap.xml

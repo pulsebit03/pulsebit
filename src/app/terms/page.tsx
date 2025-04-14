@@ -30,7 +30,7 @@ export default function Terms() {
             <div className="backdrop-blur-sm bg-gray-800/30 p-8 rounded-xl border border-gray-700/50 hover:border-blue-500/50 hover:bg-gray-700/50 transition-all duration-300">
               <h2 className="text-2xl font-semibold text-white mb-4">Acceptance of Terms</h2>
               <p className="text-gray-300">
-                By accessing and using this website, you accept and agree to be bound by the terms and provision of this agreement. Additionally, when using this website's particular services, you shall be subject to any posted guidelines or rules applicable to such services.
+                By accessing and using this website, you accept and agree to be bound by the terms and provision of this agreement. Additionally, when using this website&apos;s particular services, you shall be subject to any posted guidelines or rules applicable to such services.
               </p>
             </div>
 
@@ -54,14 +54,14 @@ export default function Terms() {
             <div className="backdrop-blur-sm bg-gray-800/30 p-8 rounded-xl border border-gray-700/50 hover:border-blue-500/50 hover:bg-gray-700/50 transition-all duration-300">
               <h2 className="text-2xl font-semibold text-white mb-4">Disclaimer</h2>
               <p className="text-gray-300">
-                The materials on PulseBit Tech's website are provided on an 'as is' basis. PulseBit Tech makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.
+                The materials on PulseBit Tech&apso;s website are provided on an &apos;as is&apos; basis. PulseBit Tech makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.
               </p>
             </div>
 
             <div className="backdrop-blur-sm bg-gray-800/30 p-8 rounded-xl border border-gray-700/50 hover:border-blue-500/50 hover:bg-gray-700/50 transition-all duration-300">
               <h2 className="text-2xl font-semibold text-white mb-4">Limitations</h2>
               <p className="text-gray-300">
-                In no event shall PulseBit Tech or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on PulseBit Tech's website.
+                In no event shall PulseBit Tech or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on PulseBit Tech&apos;s website.
               </p>
             </div>
 
