@@ -68,7 +68,7 @@ const projects: Project[] = [
         category: 'Web Development',
         technologies: ['ReactJS', 'TypeScript', 'NodeJS'],
         link: 'https://nexthire.pulsebit.tech'
-      },
+    },
 ];
 
 const categories = ['All', 'Web Development', 'AI & Machine Learning', 'Mobile Development', 'UI/UX Design'];
@@ -116,7 +116,7 @@ export default function Portfolio() {
                         {filteredProjects.map((project) => (
                             <div
                                 key={project.id}
-                                className="group relative overflow-hidden rounded-xl bg-gray-800/50 backdrop-blur-sm border border-gray-700/50 hover:border-blue-500/50 transition-all duration-300 hover:shadow-2xl hover:scale-105"
+                                className={`group relative overflow-hidden rounded-xl bg-gray-800/50 backdrop-blur-sm border ${hoveredProject === project.id ? 'border-blue-500/50 shadow-2xl scale-105' : 'border-gray-700/50'} transition-all duration-300`}
                                 onMouseEnter={() => setHoveredProject(project.id)}
                                 onMouseLeave={() => setHoveredProject(null)}
                             >
