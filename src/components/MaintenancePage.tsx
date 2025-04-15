@@ -26,11 +26,11 @@ export default function MaintenancePage() {
           transition={{ delay: 0.2, duration: 0.5 }}
           className="text-4xl md:text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500"
         >
-          {/* We&apos;ll Be Back Soon! */}
-          ShutDown Site !
+          We&apos;ll Be Back Soon!
+          {/* ShutDown Site ! */}
         </motion.h1>
 
-       {/* <motion.p
+       <motion.p
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.3, duration: 0.5 }}
@@ -38,9 +38,9 @@ export default function MaintenancePage() {
         >
           We&apos;re currently performing scheduled maintenance to improve your experience.
           Thank you for your patience!
-        </motion.p> */}
+        </motion.p>
 
-        {/* <motion.div
+        <motion.div
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.4, duration: 0.5 }}
@@ -51,7 +51,7 @@ export default function MaintenancePage() {
             We expect to be back online within a few hours.
             Please check back later.
           </p>
-        </motion.div> */}
+        </motion.div>
 
         <motion.div
           initial={{ y: 20, opacity: 0 }}
